@@ -22,6 +22,8 @@ private RegistrationServiceClient registrationServiceClient;
 
     String confirm = registrationServiceClient.someDetails(userDetails);
     Map<String,String> responseMessage = new HashMap<>();
+    responseMessage.put("message",confirm);
+    return responseMessage;
 
     }
 
