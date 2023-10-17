@@ -19,7 +19,7 @@ private RegistrationServiceClient registrationServiceClient;
 @PostMapping("/confirm-and-register")
     public Map<String,String> confirmAndRegister(@RequestBody UserDetails userDetails){
 
-
+    String confirm = registrationServiceClient.someDetails(userDetails);
 
     }
 
