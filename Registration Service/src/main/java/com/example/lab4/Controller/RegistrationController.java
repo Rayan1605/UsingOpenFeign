@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegistrationController {
 
-@PostMapping("/register")
+@PostMapping("/confirm")
 public String register(@RequestBody UserDetails userDetails){
 
     return "Hello " + userDetails.getName() + " your registration is successful with the email" + userDetails.getEmail();
